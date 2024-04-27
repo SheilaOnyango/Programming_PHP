@@ -42,7 +42,7 @@ $result = mysqli_query($conn, $sql);
     <h1>Delete Book</h1>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
         <label for="id">Book ID:</label><br>
-        <select id="id" name="id" required>
+        <select id="id" name="id">
             <?php 
             // Display book IDs in dropdown menu for selection
             while ($row = mysqli_fetch_assoc($result)) {
