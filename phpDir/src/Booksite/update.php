@@ -47,13 +47,13 @@ if (isset($_POST['submit'])) {
     <h1>Update Book</h1>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
         <label for="title">Title:</label><br>
-        <input type="text" id="title" name="title" value="<?php echo isset($row['title']) ? $row['title'] : ''; ?>" required><br>
+        <input type="text" id="title" name="title" value="<?php echo isset($row['title']) ? $row['title'] : ''; ?>"><br>
         <label for="author">Author:</label><br>
-        <input type="text" id="author" name="author" value="<?php echo isset($row['author']) ? $row['author'] : ''; ?>" required><br>
+        <input type="text" id="author" name="author" value="<?php echo isset($row['author']) ? $row['author'] : ''; ?>"><br>
         <label for="year">Year:</label><br>
-        <input type="number" id="year" name="year" value="<?php echo isset($row['year']) ? $row['year'] : ''; ?>" required><br>
+        <input type="number" id="year" name="year" value="<?php echo isset($row['year']) ? $row['year'] : ''; ?>"><br>
         <label for="genre">Genre:</label><br>
-        <input type="text" id="genre" name="genre" value="<?php echo isset($row['genre']) ? $row['genre'] : ''; ?>" required><br>
+        <input type="text" id="genre" name="genre" value="<?php echo isset($row['genre']) ? $row['genre'] : ''; ?>"><br>
         <label for="description">Description:</label><br>
         <textarea id="description" name="description" required><?php echo isset($row['description']) ? $row['description'] : ''; ?></textarea><br>
         <input type="submit" name="submit" value="Update Book">
